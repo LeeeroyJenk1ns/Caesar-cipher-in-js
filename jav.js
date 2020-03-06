@@ -9,7 +9,6 @@ btnEncrypt.addEventListener('click', () => {
     const offset = +document.querySelector('input').value;
     if (offset > 32 || offset < 0) {
         p.innerText = 'Сдвиг должен быть от 1 до 32';
-        console.log(111);
     } else {
         cipher.forEach((e, i) => {
             if (alph.includes(e)) {
